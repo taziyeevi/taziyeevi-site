@@ -1,0 +1,31 @@
+:root{--bg:#f1f4f3;--surface:#fff;--ink:#1b2a2c;--muted:#53666a;--accent:#2d5a5f;--accent-ink:#fff;--line:#d5dedc}
+@media (prefers-color-scheme:dark){:root{--bg:#121b1c;--surface:#1a2628;--ink:#e8eeed;--muted:#9fb1b3;--accent:#7fb3b7;--accent-ink:#0f1a1b;--line:#2b3b3d}}
+*{box-sizing:border-box}
+html{scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.65 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:500;line-height:1.2;margin:0 0 .6em}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.01em}
+h2{font-size:1.7rem}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem;gap:1rem;flex-wrap:wrap}
+.brand{font-family:"Newsreader",Georgia,serif;font-size:1.4rem;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.25rem;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:4.5rem 0 3.5rem}
+.hero p.lead{font-size:1.25rem;color:var(--muted)}
+.stores{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.badge{display:inline-block;padding:.7rem 1.1rem;border:1px solid var(--line);border-radius:.5rem;background:var(--surface);color:var(--muted);font-size:.95rem}
+.features{padding:1rem 0 4rem;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.features div{border-top:2px solid var(--accent);padding-top:1rem}
+.features p{color:var(--muted);margin:0}
+.page{padding:3rem 0 4rem}
+.page h1{font-size:clamp(1.9rem,5vw,2.6rem)}
+.note{padding:1rem 1.25rem;border-left:4px solid var(--accent);background:var(--surface);max-width:62ch}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:.5rem;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600}
+footer.site{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.95rem}
+footer.site a{color:var(--muted);margin-right:1rem}
+@media (max-width:30rem){nav a{margin:0 1rem 0 0}.hero{padding-top:3rem}}
